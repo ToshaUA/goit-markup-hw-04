@@ -234,6 +234,29 @@ body {
 .about-list-scroll {
   min-width: 270px;
 }
+.about-list-scroll::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+.about-list-scroll:nth-child(1)::before {
+  background-image: url(..//images/antenna.png);
+}
+.about-list-scroll:nth-child(2)::before {
+  background-image: url(..//images/clock.png);
+}
+.about-list-scroll:nth-child(3)::before {
+  background-image: url(..//images/diagram.png);
+}
+.about-list-scroll:nth-child(4)::before {
+  background-image: url(..//images/astronaut.png);
+}
 /*---------------------PRICES-------------------------*/
 .prices {
   padding-bottom: 94px;
@@ -263,6 +286,12 @@ body {
 .command-list {
   display: flex;
   text-align: center;
+}
+.command-item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .command-item:not(:last-child) {
   margin-right: 30px;
@@ -402,13 +431,7 @@ body {
 .price-list {
   display: flex;
   flex-wrap: wrap;
-  /* margin-top: -30px;
-  margin-left: -30px;*/
 }
-/*.price-list-titel {
-  margin-top: 30px;
-  margin-left: 30px;
-}*/
 .price-list-titel {
   margin-right: 30px;
   margin-bottom: 30px;
