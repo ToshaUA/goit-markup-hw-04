@@ -136,25 +136,11 @@ body {
 
   color: var(--hader-address-color);
 }
-.envelope::before {
-  display: inline-block;
-  width: 16px;
-  height: 12px;
-  content: '';
+.icon-smartphone {
   margin-right: 10px;
-  background-image: url('../images/envelope.png');
-  background-size: contain;
-  background-position: center;
 }
-.smartphone::before {
-  display: inline-block;
-  width: 10px;
-  height: 16px;
-  content: '';
-  margin-right: 10px;
-  background-image: url('../images/smartphone.png');
-  background-size: contain;
-  background-position: center;
+.icon-smartphone {
+  fill: currentColor;
 }
 .header-address-link:hover,
 .header-address-link:focus {
@@ -231,32 +217,15 @@ body {
 
   color: var(--second-text-color);
 }
-.about-list-scroll {
-  min-width: 270px;
-}
-.about-list-scroll::before {
-  display: block;
-  content: '';
-  height: 120px;
+.icon-antenna {
+  display: flex;
   background: #f5f4fa;
   border-radius: 4px;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
+  align-items: center;
+  padding: 25px 100px 25px 100px;
   margin-bottom: 30px;
 }
-.about-list-scroll:nth-child(1)::before {
-  background-image: url(..//images/antenna.png);
-}
-.about-list-scroll:nth-child(2)::before {
-  background-image: url(..//images/clock.png);
-}
-.about-list-scroll:nth-child(3)::before {
-  background-image: url(..//images/diagram.png);
-}
-.about-list-scroll:nth-child(4)::before {
-  background-image: url(..//images/astronaut.png);
-}
+
 /*---------------------PRICES-------------------------*/
 .prices {
   padding-bottom: 94px;
@@ -322,11 +291,77 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--second-text-color);
+  margin-bottom: 16px;
 }
 .item-name {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.command-social-list {
+  display: flex;
+  justify-content: center;
+}
+.command-social-item {
+  width: 44px;
+  height: 44px;
+}
+.command-socia-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.command-social-item + .command-social-item {
+  margin-left: 10px;
+}
+.command-socia-link:hover,
+.command-socia-link:focus {
+  background-color: var(--accent-color);
+}
+.command-socia-link:hover .command-socia-icon,
+.command-socia-link:focus .command-socia-icon {
+  fill: var(--main-button-color);
+}
+.command-socia-icon {
+  fill: #afb1b8;
+}
+/*---------------------compani-------------------------*/
+.regular-clients {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.clients-item {
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+.clients-item:hover,
+.clients-item:focus {
+  border: 1px solid var(--accent-color);
+}
+.clients-item:hover .icon-company,
+.clients-item:focus .icon-company {
+  fill: var(--accent-color);
+}
+.icon-company {
+  fill: #afb1b8;
+}
+
 /*---------------------footer-------------------------*/
 .footer-logo-left {
   display: inline-block;
@@ -375,6 +410,53 @@ body {
 }
 .footer-contacts-address {
   margin-bottom: 9px;
+}
+.list-footer {
+  display: flex;
+}
+.social-list-firm-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-list-firm-item {
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-list-firm-item + .social-list-firm-item {
+  margin-left: 10px;
+}
+.socia-icon {
+  fill: #ffffff;
+}
+.social-list-firm {
+  display: flex;
+}
+.logo-address {
+  margin-right: 70px;
+}
+.social {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+.social-list-firm-link:hover,
+.social-list-firm-link:focus {
+  background-color: var(--accent-color);
 }
 /* -----------------PORTFOLIO------------------------ */
 
@@ -461,4 +543,13 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--price-after-titile-color);
+}
+.filtr-product {
+  text-decoration: none;
+  display: block;
+}
+.filtr-product:focus,
+.filtr-product:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
