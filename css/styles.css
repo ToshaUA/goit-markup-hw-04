@@ -333,14 +333,8 @@ body {
   padding-top: 94px;
 }
 .clients-item {
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
   width: 170px;
   height: 92px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .clients-list {
   display: flex;
@@ -350,8 +344,8 @@ body {
 .clients-item + .clients-item {
   margin-left: 30px;
 }
-.clients-item:hover,
-.clients-item:focus {
+.icon-company:hover,
+.icon-company:focus {
   border: 1px solid var(--accent-color);
 }
 .clients-item:hover .icon-company,
@@ -360,6 +354,13 @@ body {
 }
 .icon-company {
   fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 /*---------------------footer-------------------------*/
@@ -413,6 +414,7 @@ body {
 }
 .list-footer {
   display: flex;
+  align-items: baseline;
 }
 .social-list-firm-link {
   width: 100%;
